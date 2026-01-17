@@ -1,2 +1,25 @@
 @import "tailwindcss";
 
+:root {
+  --bg-color: #333;
+  --text-color: #fff;
+ 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+@media (prefers-color-scheme: light ){
+    :root {
+        --bg-color: #F0F9F6;
+        --text-color: #000;
+        
+    }
+
+    body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+}

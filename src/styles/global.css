@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --bg-color: #333;
-  --text-color: #fff;
+    --bg-color: #333;
+    --bg-components: #222;
+    --border-components: #aaaa;
+    --text-color: #fff;
+    --text-color-op: #000;
+    --second-color: #1B2E2B;
 }
 
 body {
@@ -16,6 +20,7 @@ body {
         --bg-components: #fff;
         --border-components: #3333;
         --text-color: #000;
+        --text-color-op: #fff;
         --second-color: #1B2E2B;
     }
 

@@ -7,10 +7,6 @@ import privacyPolicy from '../pages/PrivacyPolicy'
 import termsConditions from '../pages/TermsConditions'
 import timeStamp from '../pages/Timestamp'
 
-
-
-
-
 const Pages = {
    Landing: landing,
    Dashboard: dashboard,

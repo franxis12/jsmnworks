@@ -6,6 +6,7 @@
     --border-components: #aaaa;
     --text-color: #fff;
     --text-color-op: #000;
+    --primary-color: #69EFD6;
     --second-color: #1B2E2B;
 }
 
@@ -21,6 +22,7 @@ body {
         --border-components: #3333;
         --text-color: #000;
         --text-color-op: #fff;
+        --primary-color: #69EFD6;
         --second-color: #1B2E2B;
     }
 

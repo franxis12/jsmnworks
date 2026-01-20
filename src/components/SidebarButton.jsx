@@ -1,22 +1,22 @@
 import { useContext } from "react";
 import { SidebarContext } from "../context/SidebarContext";
+import { Icons } from "../imports/icons";
 
 function SidebarButton({ btnName, onClick }) {
   const { expanded } = useContext(SidebarContext);
 
   return (
     //Need to add inline gradients  from second-color to bg-color
-    <div className="bg-amber-400 w-full h-10 flex-1 items-center">
-      <div className="bg-(--second-color) w-full h-1/6 rounded-br-lg" />
-      <div className="bg-(--bg-color) border-l-2 border-gray-900/50 w-full h-4/6 rounded-l-lg flex items-center justify-center font-medium">
+    <div className=" w-full h-10 flex-1 items-center">
+      <div className=" w-full h-4/6 rounded-l-lg flex items-center justify-center font-medium">
         <button
           onClick={onClick}
-          className={`text-sm transition-colors duration-75`}
+          className={`${expanded ? "w-full" : ""} text-(--text-color-op) text-sm transition-colors duration-75 flex items-center  gap-2 p-2 rounded-full border border-white/30 `}
         >
-          {expanded ? btnName : "BT"}
+          <Icons.Home className={`w-7 h-auto text-(--primary-color)`} />
+          <p className={`${expanded ? "w-full" : "w-0 "}`}>{btnName}</p>
         </button>
       </div>
-      <div className="bg-(--second-color) w-full h-1/6 rounded-tr-lg" />
     </div>
   );
 }

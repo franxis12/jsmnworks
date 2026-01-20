@@ -1,9 +1,11 @@
-import React from "react";
+import Sidebar from "../components/Sidebar";
+import Content from "../components/Content";
 
 function Dashboard() {
   return (
-    <div className="w-full h-dvh bg-amber-300">
-      <h1 className="text-7xl">Dashboard</h1>
+    <div className="w-full h-dvh flex">
+      <Sidebar />
+      <Content />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { SidebarContext } from "../context/SidebarContext";
-import CurrentUser from "./CurrentUser";
+import CurrentUser from "../components/CurrentUser";
 import { Icons } from "../imports/icons";
 
 function Topbar() {

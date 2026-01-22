@@ -1,3 +1,14 @@
+# Dependencies on this project
+
+Tailwind CSS
+npm i tailwindcss @tailwindcss/vite
+
+Supabase
+npm i @supabase/supabase-js
+
+React Router Dom
+npm install react-router-dom
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

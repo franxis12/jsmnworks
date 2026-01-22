@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import svgr from "vite-plugin-svgr";
 
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -16,7 +15,11 @@ export default defineConfig({
         // 2) Also add fill="currentColor" to the <svg>
         svgProps: { fill: "currentColor" },
         icon: true,
-      },})
+    },}),
+    // eslint-disable-next-line no-undef
+    legacy({
+      targets: ["defaults", "not IE 11", "Safari >= 13"],
+    }),
 
   ],
 })
